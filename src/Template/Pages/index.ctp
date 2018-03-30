@@ -1,4 +1,5 @@
 <?php //pr($event);?>
+developement
 <?php if($event): ?>
 	<?php echo $this->element('event_slider'); ?>
 	<?php if($event->status==1){ ?>

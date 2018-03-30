@@ -9,7 +9,6 @@ use Cake\Auth\DefaultPasswordHasher;
 use App\View\Helper\CustomHelper;
 use Cake\Network\Session;
 
-
 class CartsController extends AppController {
 	public function initialize()
 	{
