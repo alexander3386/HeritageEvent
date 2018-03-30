@@ -1,0 +1,76 @@
+.require {color: red;}
+.table.table-bordered .sno {width:10px;}
+.table.table-bordered .status {	width:60px;	text-align: center}
+.table.table-bordered .creation { 	width:150px;	text-align: center}
+.table.table-bordered .action {width:150px;	text-align: center}
+.table.table-bordered .order {	width:60px;	text-align: center}
+.hide {	display:none;}
+.add_btn { float:right;}
+#search_field {	border-radius: 3px;}
+.highlight {font-style: italic;	background: yellow;}
+#current_status{	text-transform: capitalize;}
+.imageHeightWidth {	width: 100px;	height: 100px;}
+ul.fileList{margin:0px;padding:0px;}
+ul.fileList li{list-style: none;float: left;margin-right:10px;position:relative;}
+ul.fileList li img{width:80px;}
+ul.fileList li a{position:absolute;top:0;right:0;display:none;}
+ul.fileList li:hover a{display:block;}
+.clear{clear: both;}
+input.coupon_code{text-transform:uppercase;}
+
+.action-sec span{display: inline-block; float: left; width:30px; margin:0px 10px 0 0; padding: 0}
+.action-sec .form-control{float: left; width:calc(100% - 40px)}
+#existing_cust{margin-left: 15px;}
+.customer-type label{margin:0 5px 10px 0; display: block}
+.customer-type input[type=radio]{margin:0px 5px 0 0}
+.ticket_img{position: relative; display: block; width: 132px; height: 70px;}
+.ticket_img IMG{width: auto; max-width: inherit; height: 100%; position: absolute; left:50%; top:50%; transform: translate(-50%,-50%)}
+
+.customer-type input[type=radio], .customer-type title, .payment_box .payment .form-group label, .payment_box .payment .form-group input[type=radio]{display: inline-block; vertical-align:middle}
+.qty-custm .input-group{float: left; margin:0 ; padding: 0}
+.qty-custm .input-group input{float: left;margin: 0 3px 0 0;padding: 0 10px;display: inline-block;width: calc(100% - 74px);box-sizing: border-box;max-width: 50px;text-align: center;} 
+.qty-custm .input-group-btn-vertical{float: left;margin:0;padding:0;width: 71px;}
+.qty-custm .addtocart{float: left; margin:0 0 0 3px; padding:0} 
+
+.payment_box{background:#eee; padding:30px 10px; float: left; width: 100%; margin-top: 30px;} 
+.payment_box .col-md-3 {padding: 0} 
+.payment_box .payment{margin-top: 10px;}
+.payment_box .payment .form-group label{margin: 0 5px 0 0}
+.payment_box .payment .form-group title{margin: 0 0 0 5px;} 
+.payment_box .payment .form-group input[type=radio]{margin: 0 5px 0 15px}
+.qty-custm .addtocart .btn{border-radius:3px;}
+.box-header .add_btn{margin-left: 10px;}
+
+#searched_Customer .radio{margin: 0}
+#pass_created label{display: block}
+#pass_created .radio{display: inline-block; margin-right: 15px;}
+.discount-price{text-decoration:line-through}
+.total .cart-total{text-align: right}
+.payment_box .col-md-2{text-align: right}
+
+.orderdetail{padding: 15px;}
+.orderdetail h3{font-size:24px; font-weight:600}
+.orderdetail .table-bordered{margin-top: 30px;}
+.customer-details, .customer-address{background:rgba(240,238,244, 0.6);padding:15px;/* display:flex; */font-size: 16px;min-height: 200px;margin: 10px 15px;border: 1px solid #eee;width: calc(50% - 30px);}
+
+.customer-details h4, .customer-address h4{display: block;padding:10px 0;margin: 0;width: 100%;font-weight: 600;}
+.customer-details h5, .customer-address h5{display: block;margin: 5px 0 15px;padding: 0;width: 100%;font-size: 16px;}
+.customer-details span{display:inline-block; padding-left: 5px;} 
+.customer-details label{width: 130px;}
+.customer-address label{margin-right:10px;font-weight:600;color:#000;width: 130px;}
+
+.flex{display:flex}
+.code_view .text-field{margin-bottom:10px; max-width: 450px; float: left; width:calc(100% - 70px); margin-right: 10px;}
+.code_view .col-md-5{padding-left: 0}
+.code_view .col-md-5 label{float: left; width: 100%;}
+.code_view  .btn-success{float: left; margin: 0; }
+
+#worldpay{max-width: 550px;}
+.orderdetail .table>thead>tr>th{background:rgba(240,238,244, 0.6); padding:15px!important;}
+.orderdetail .table>tbody>tr>td{padding-left:15px!important; padding-right:15px!important;}
+.btm-table .table{border: 1px solid #f4f4f4}
+
+.sidebar-menu li ul{background: #1e282c;}
+.sidebar-menu li ul li a{padding-left: 30px;}
+.sidebar-menu li .fa-object-group{font-size: 13px;}
+.skin-blue .sidebar a[aria-expanded="true"]{background: #1e282c;border-left-color: #3c8dbc;}

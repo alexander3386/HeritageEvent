@@ -1,0 +1,153 @@
+.welcome_specific { float: left; width: 1000px; margin-left: 100px;}
+.dashboard-welcome-msg { float: left; height: 90px; padding: 10px 0 35px; width: 1000px; }
+.dashboard-welcome-msg h2 { color: #475764; float: left; font-family: "Trebuchet MS"; margin-bottom: 5px; font-size: 22px; line-height: 20px; text-align: center; width: 1000px; }
+.dashboard-welcome-msg h3 { color: #475764; float: left; font-family: "Trebuchet MS"; font-size: 15px; line-height: 0px; text-align: center; width: 1000px; }
+.logoutLink a { color: #9C1F2D; font-family: "Trebuchet MS"; font-size: 22px; line-height: 30px; text-align: center; line-height: 0px; text-decoration: none; width: 80px; }
+.adbsub { float: left; margin: 12px 40px; position: relative; width: 308px; }
+.specific_admin_links { float: left; margin-left: 100px; padding-bottom: 25px; text-align: center; width: 900px; }
+.specific_admin_links a { border: 0 solid red; float: left; outline: medium none; }
+.specific_admin_links img { float: left; margin: 0; text-align: center; }
+.welcome_specific #flashMessage { margin-left: 370px; }
+.selectedAction a { background-color: #CCC !important; }
+
+.tbldiv {
+    display: table;         
+    width: 100%;
+    font-family: Arial;
+    /* font-size: 13px; */
+    border: 1px solid #D3D3D3;
+}
+.tbldiv .row {
+    display: table-row;
+    border-top: 1px solid #D3D3D3;
+    border-bottom: 1px solid #D3D3D3;
+    line-height: 2;
+}
+.tbldiv .row .last{border-right:none !important;}
+.tbldiv .row .td { border-top: 1px solid #CCC; }
+.tbldiv .row .th {
+    display: table-cell;
+    border-right: 1px solid #FFF;
+    padding: 0px 5px;
+    background-color: #9C1F2D;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: left;
+    line-height: 30px;
+    vertical-align: middle;
+    white-space:nowrap;
+}
+.tbldiv .row .th a{color:#fff;}
+.tbldiv .row .td a img{ margin: 0px 1px; vertical-align: middle; padding: 0 0 2px 2px;}
+.tbldiv .row .td {
+    display: table-cell;
+    border-right: 1px solid #D3D3D3;
+    /* padding: 2px 5px 4px 5px; */
+    padding: 0px 6px;
+    color: #444444;
+    text-align: left;
+    vertical-align: middle;
+    word-break: break-word;
+}
+.wd5pc { width: 5% !important; }
+.wd6pc { width: 6% !important; }
+.wd7pc { width: 7% !important; }
+.wd9pc { width: 9% !important; }
+.wd10pc { width: 10% !important; }
+.wd12pc { width: 12% !important; }
+.wd15pc { width: 15% !important; }
+.wd18pc { width: 18% !important; }
+.wd20pc { width: 20% !important; }
+.wd22pc { width: 22% !important;}
+.wd23pc { width: 23% !important;}
+.wd24pc { width: 24% !important;}
+.wd25pc { width: 25% !important;}
+.wd30pc { width: 30% !important; }
+.wd35pc { width: 35% !important; }
+.wd37pc { width: 37% !important; }
+.wd40pc { width: 40% !important;}
+.wd60pc { width: 60% !important;}
+.wd100pc { width: 100% !important;}
+.actionImages { width: 20px; margin-bottom: 4px; }
+.renderMessage {width: 100%; font-size: 16px; margin-top: 5px;}
+.norec { border: 1px solid #ccc;line-height: 30px;text-align: center;width: 100%; border-top:none; }
+.mandatory {color: #ff0000;}
+
+
+/* Login page */
+.login_form { margin: 0 auto; width: 1000px; }
+.login_content { background: rgba(0, 0, 0, 0) url("../images/admin_login.png") no-repeat scroll 0 0; float: left; height: 402px; width: 491px; margin-left: 220px; margin-top: 125px;}
+.buyer_login_content { background: rgba(0, 0, 0, 0) url("../images/staff.png") no-repeat scroll 0 0; float: left; height: 402px; width: 491px; margin-left: 220px; margin-top: 125px;}
+.admin_enter_inner { float: left; padding: 130px 0 0 100px !important; width: 330px; }
+.admin_enter_inner { padding: 130px 0 0 145px; }
+.admin_form_row { float: left; padding-bottom: 13px; width: 315px; }
+.admin_form_lable { color: #ffffff; float: left; font-family: Arial; font-size: 14px; padding-top: 6px; text-transform: uppercase; width: 93px; }
+.admin_form_box { float: left; width: 215px; }
+.admin_form_field { background: #ffffff none repeat scroll 0 0; border: 1px solid #96969d; float: left; height: 26px; width: 212px; }
+.admin_form_field { padding: 0 4px; }
+.admin_login_link { float: left; padding-bottom: 13px; padding-left: 93px; text-align: left; width: 215px; }
+.admin_login_forget { color: #dcdcdc; float: left; font-family: Arial; font-size: 13px; padding-left: 93px; text-align: left; width: 215px; }
+.admin_login_forget a { color: #dcdcdc; text-decoration: underline; }
+a { cursor: pointer; outline: medium none; }
+
+.message.error {color: #ff0000;}
+.message.success {color: green;}
+/*.dropdownlist {background:url('../img/dropdown-triangle.png') no-repeat right center #ebebeb;}*/
+.readonly {background: #CCC}
+
+
+/* After login header css start */
+.dashboardHeader { float: left; border-top: 10px solid #9C1F2D; width: 100%; margin-top: 8px; margin-bottom: 15px; }
+#username {font-size: 16px; cursor: pointer; vertical-align: middle;}
+#username > img { margin-left: -10px; vertical-align: middle; }
+.dropdown { position: relative; display: inline-block; }
+.dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; overflow: auto; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; }
+.dropdown-content a { margin-bottom: 9px; color: black; font-size: 17px; padding-left: 15px; padding-top: 5px; text-transform: none; text-decoration: none; display: block; }
+.show {display:block;}
+.general { width: 15px; margin-top: 3px;}
+.border {border-top: 1px solid #CCC;}
+#viewprofile { margin: 10px; }
+#usrnm { font-size: 12px; text-transform: capitalize; margin-left: 10px; word-wrap: break-word;}
+#profilelink { margin-top: 6px; margin-left: -5px;}
+#viewp {font-size: 12px !important; color:#9C1F2D;}
+#settings { margin-top: 5px; padding: 0 5px; text-transform: capitalize; float: right; /*position: relative;*/}
+.actionsList { background-color: #e7e7e7; }
+.actiononhover:hover {background-color: #b4b4b4;}
+.dropdownlist {background: #f7f7f7 url('../img/header-user-menuarrow.png') right 4px no-repeat; padding: 3px 15px 3px 3px;}
+/* After login header css end */
+
+
+
+.show_page_sec { width:40%; float:left;  padding:11px 0 9px 0;}
+.show_page_txt { width:40px; float:left; font-family:Arial; font-size:12px; color:#444444; text-align:right; line-height:21px; padding:0 6px 0 0;}
+.show_page_txtfield {float:left;}
+.show_page_txtbox { width:60px; float:left; font-family:Arial; font-size:12px; color:#444444; border:1px solid #7f9db9; background-color:#fff; height:21px; line-height:21px; padding:2px;}
+.show_page_txt1 { float:left; font-family:Arial; font-size:12px; color:#444444; line-height:21px; padding:0 0 0 6px;}
+
+.filterForm { float: left; margin-top: 5px; width:100%;}
+.filterForm fieldset{border:1px solid #ccc;}
+.filterForm fieldset form{text-align: center;}
+.filterForm input,select { border: 1px solid #ccc;line-height: 25px; margin-left: 10px;}
+.filterForm select{height:30px; width:231px;}
+.filterForm .input{margin-bottom:17px; text-align: left;}
+.filterForm .searchButton { background-image: linear-gradient(to bottom, #a55459, #9c1f30);border: 1px solid #96333d !important;border-radius: 3px;color: #ffffff;font-weight: 600;margin-top: 5px;padding: 3px;}
+.filterForm .resetButton { background-image: linear-gradient(to bottom, #a55459, #9c1f30);border: 1px solid #96333d !important;border-radius: 3px;color: #ffffff;font-weight: 600;margin-top: 5px;padding: 3px; line-height:25px; text-decoration: none; padding: 8px 7px 7px; font-size:14.6667px;}
+.filterForm label{display: inline-block; min-width: 275px; text-align:right;}
+.pagination li{display: inline; float: left; list-style-type: none;padding-right: 10px;}
+.pagination li a{text-decoration: none;}
+.pagination li.active > a { color: #9c1f30 !important; text-decoration:underline}
+
+.excelReport { float: left; width: 20%; margin-top: 5px; background-color: #333333; text-align: center; height: 22px; padding-top: 5px;}
+.excelReport a {text-decoration: none; color: #ffffff; }
+.fileList{float:left;width:50%;vertical-align: top;}
+#sub_parent{padding-bottom: 10px;}
+.sub_child{margin-top: 0 !important; margin-bottom: 0 !important; margin-left:20px !important; }
+.myform .radio label{min-width: 80px; padding:0; margin: 0;}
+.sub_child li{padding-bottom:8px !important;}
+.cke_chrome{ float: left ; margin-bottom: 17px !important}
+input[type=file]{border:none !important;}
+.form-group textarea{height:150px;}
+
+
+
