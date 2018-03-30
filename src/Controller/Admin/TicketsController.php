@@ -26,7 +26,8 @@ class TicketsController extends AppController
     {
 		parent::initialize();
 		$this->viewBuilder()->layout('admin');
-		
+		$this->loadModel('OrderItems');
+		$this->loadModel('Orders');
     }
 	/**
      * Index method
@@ -295,18 +296,18 @@ class TicketsController extends AppController
 			$d_arr[2] 	= ($items['description']!='')?$items['description']:'-';
 			$d_arr[3] 	= ($items['item_code']!='')?$items['item_code']:'-';
 			$d_arr[4] 	= ($items['price']!='')?$items['price']:'-';
-			$d_arr[5] 	= ($items['total_allocation']!='')?$items['total_allocation']:'-';
-			$d_arr[6] 	= ($items['web_allocation']!='')?$items['web_allocation']:'-';
-			$d_arr[7] 	= ($items['offline_allocation']!='')?$items['offline_allocation']:'-';
+			$d_arr[5] 	= $this->OrderItems->getTotalAllocatedTickets();
+			$d_arr[6] 	= $this->Orders->getOnlineAllocatedTickets();
+			$d_arr[7] 	= $this->Orders->getOfflineAllocatedTickets();;
 			$d_arr[8] 	= ($items['status']!=0)?'Active':'Inactive';
 
 			array_push($data, $d_arr);
 		}
-		//pr($data);die;
-
+		
 		$filename = "HRE_Tickets_".time().'.csv';
 		$this->set(compact('data', '_serialize'));
 		$this->response->download($filename);
 		$this->viewBuilder()->className('CsvView.Csv');
 	}
+
 }

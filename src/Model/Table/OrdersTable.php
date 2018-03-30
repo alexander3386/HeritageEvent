@@ -379,5 +379,46 @@ class OrdersTable extends Table
 		$order = $this->find('all')->where( ['Orders.id' =>$orderid] )->contain(['Customers', 'OrderItems'])->first();
 		return $order;
 	}
+
+	public function getOnlineAllocatedTickets()
+	{
+		$find_online_allocation = $this->find('all', ['contain' => ['OrderItems']])->where(['Orders.order_type'=>'online'])->all();
+
+		$total = 0;
+		$data = $find_online_allocation->toArray();
+		foreach($data as $items)
+		{
+			foreach($items['order_items'] as $or_items)
+			{
+				if($or_items['item_type'] == 'ticket')
+				{
+					$total+= $or_items['item_quantity'];
+				}
+			}
+			
+		}
+		return $total;
+
+	}
+	public function getOfflineAllocatedTickets()
+	{
+		$find_offline_allocation = $this->find('all', ['contain' => ['OrderItems']])->where(['Orders.order_type'=>'telephone'])->all();
+
+		$total = 0;
+		$data = $find_offline_allocation->toArray();
+		foreach($data as $items)
+		{
+			foreach($items['order_items'] as $or_items)
+			{
+				if($or_items['item_type'] == 'ticket')
+				{
+					$total+= $or_items['item_quantity'];
+				}
+			}
+			
+		}
+		return $total;
+
+	}
 	
 }

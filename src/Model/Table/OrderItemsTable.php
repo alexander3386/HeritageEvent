@@ -197,4 +197,19 @@ class OrderItemsTable extends Table
 		$tickets = $this->find('all')->where( ['OrderItems.order_id' =>$orderid,'OrderItems.item_type'=>'ticket'] )->all();
 		return $tickets;
 	}
+
+	public function getTotalAllocatedTickets()
+	{
+		$find_total_allocation = $this->find('all')->where(['OrderItems.item_type'=>'ticket'])->all();
+
+		$total = 0;
+		$data = $find_total_allocation->toArray();
+
+		foreach($data as $items)
+		{
+			$total+= $items['item_quantity'];
+		}
+		return $total;
+
+	}
 }
